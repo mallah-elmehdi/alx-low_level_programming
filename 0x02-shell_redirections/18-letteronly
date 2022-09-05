@@ -1,2 +1,2 @@
 #!/bin/bash
-grep "^Py" /etc/ssh/sshd_config
+grep -E  "^[A-Za-z]" /etc/ssh/ssh_config
