@@ -24,8 +24,8 @@ void jack_bauer(void)
 			}
 			else
 			{
-				_putchar((m / 10) + 48);
-				_putchar((m % 10) + 48);
+				_putchar((h / 10) + 48);
+				_putchar((h % 10) + 48);
 			}
 			_putchar(':');
 
