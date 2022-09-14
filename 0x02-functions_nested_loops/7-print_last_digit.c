@@ -12,11 +12,9 @@ int print_last_digit(int c)
 	long ret;
 	long m;
 
-	if (c >= 0)
-		m = c;
-	else
-		m = -c;
-
+	m = c;
+	if (m < 0)
+		m = -m;
 	ret = m % 10;
 	_putchar(48 + (int)ret);
 	return ((int)ret);
