@@ -39,7 +39,7 @@ int print_last_digit(int c)
 {
 	int ret;
 
-	ret = _abs(c) % 10;
+	ret = _abs_long(c) % 10;
 	_putchar(48 + ret);
 	return (ret);
 }
