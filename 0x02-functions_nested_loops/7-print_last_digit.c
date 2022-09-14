@@ -24,7 +24,7 @@ int print_sign(int c)
  * Return: int
  */
 
-long _abs(int n)
+long _abs_long(int n)
 {
 	return (n * print_sign(n));
 }
