@@ -19,14 +19,7 @@ void times_table(void)
 		while (h <= 9)
 		{
 			ret = w * h;
-			if (ret < 10)
-				_putchar(ret + 48);
-			else
-			{
-				_putchar((ret / 10) + 48);
-				_putchar((ret % 10) + 48);
-			}
-			if (h != 9)
+			if (h != 0)
 			{
 				_putchar(',');
 				if (ret >= 10)
@@ -36,6 +29,13 @@ void times_table(void)
 					_putchar(' ');
 					_putchar(' ');
 				}
+			}
+			if (ret < 10)
+				_putchar(ret + 48);
+			else
+			{
+				_putchar((ret / 10) + 48);
+				_putchar((ret % 10) + 48);
 			}
 			h++;
 		}
