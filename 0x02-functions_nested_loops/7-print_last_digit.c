@@ -9,7 +9,7 @@
 
 int print_last_digit(int c)
 {
-	int ret;
+	long ret;
 	long m;
 
 	if (c >= 0)
@@ -18,6 +18,6 @@ int print_last_digit(int c)
 		m = -c;
 
 	ret = m % 10;
-	_putchar(48 + ret);
-	return (ret);
+	_putchar(48 + (int)ret);
+	return ((int)ret);
 }
