@@ -2,6 +2,36 @@
 #include "main.h"
 
 /**
+ * _print - function
+ * @n: int
+ *
+ * Return: void
+ */
+
+void _print(int n)
+{
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+	if (n >= 100)
+	{
+		_putchar((n / 100) + '0');
+		_putchar(((n / 10) % 10) + '0');
+		_putchar((n % 10) + '0');
+	}
+	else if (n >= 10)
+	{
+		_putchar((n / 10) + '0');
+		_putchar((n % 10) + '0');
+	}
+	else
+		_putchar(n + '0');
+
+}
+
+/**
  * print_to_98 - function
  * @n: int
  *
@@ -10,50 +40,14 @@
 
 void print_to_98(int n)
 {
-	if (n >= 98)
+	while (n != 98)
 	{
-		while (n >= 98)
-		{
-			if (n >= 100)
-			{
-				_putchar((n / 100) + 48);
-				_putchar(((n % 100) / 10) + 48);
-				_putchar((n % 10) + 48);
-			}
-			else if(n >= 10)
-			{
-				_putchar((n / 10) + 48);
-				_putchar((n % 10) + 48);
-			}
-			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+		_print(n);
+		if (n > 98)
 			n--;
-		}
-	}
-	else
-	{
-		while (n <= 98)
-		{
-			
-			if (n >= 10)
-			{
-				_putchar((n / 10) + 48);
-				_putchar((n % 10) + 48);
-			}
-			else
-			{
-				_putchar(n + 48);
-			}
-			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+		else
 			n++;
-		}
 	}
+	_print(n);
 	_putchar('\n');
 }
