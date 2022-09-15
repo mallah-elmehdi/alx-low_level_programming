@@ -28,9 +28,11 @@ void _print(int n)
 	}
 	else
 		_putchar(n + '0');
-	_putchar(',');
-	_putchar(' ');
-
+	if (n != 98)
+	{
+		_putchar(',');
+		_putchar(' ');
+	}
 }
 
 /**
