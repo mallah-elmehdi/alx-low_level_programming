@@ -14,7 +14,7 @@ void print_str(char *str)
 	i = 0;
 	while (str[i])
 	{
-		_putchar(str[i]);
+		putchar(str[i]);
 		i++;
 	}
 }
@@ -41,14 +41,15 @@ void fizz_buzz(void)
 		{
 			if (i >= 10)
 			{
-				_putchar((i / 10) + 48);
-				_putchar((i % 10) + 48);
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
 			}
 			else
-				_putchar(i + 48);
+				putchar(i + 48);
 		}
-		_putchar(' ');
+		if (i != 100)
+			putchar(' ');
 		i++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }

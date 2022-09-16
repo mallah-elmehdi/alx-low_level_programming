@@ -8,6 +8,6 @@
 
 int main(void)
 {
-    more_numbers();
+    fizz_buzz();
     return (0);
 }
