@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  ** print_most_numbers - function
  ** Return: 0

@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  ** mul - function
  ** @a: param 1

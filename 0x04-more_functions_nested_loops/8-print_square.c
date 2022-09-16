@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  ** print_square - func
  ** @n: param

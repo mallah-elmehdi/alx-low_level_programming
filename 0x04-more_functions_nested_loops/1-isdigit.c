@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  ** _isdigit - function
  ** @c: param 1

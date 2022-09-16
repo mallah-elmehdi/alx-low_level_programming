@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  ** print_diagonal - func
  ** @n: param
