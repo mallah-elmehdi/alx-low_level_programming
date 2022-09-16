@@ -20,11 +20,11 @@ void print_str(char *str)
 }
 
 /**
- ** fizz_buzz - func
+ ** main - func
  ** Return: void
  **/
 
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
@@ -52,4 +52,5 @@ void fizz_buzz(void)
 		i++;
 	}
 	_putchar('\n');
+	retirn (0);
 }
