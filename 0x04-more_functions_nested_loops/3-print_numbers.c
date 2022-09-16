@@ -1,5 +1,5 @@
 /**
- ** print_numbers - tests function that prints if integer is positive or negative
+ ** print_numbers - func
  ** @c: param 1
  **
  ** Return: 0

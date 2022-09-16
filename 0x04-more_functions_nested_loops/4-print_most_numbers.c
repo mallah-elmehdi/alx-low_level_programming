@@ -1,5 +1,5 @@
 /**
- ** print_most_numbers - tests function that prints if integer is positive or negative
+ ** print_most_numbers - function
  ** Return: 0
  **/
 

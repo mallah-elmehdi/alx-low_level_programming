@@ -1,5 +1,5 @@
 /**
- ** mul - tests function that prints if integer is positive or negative
+ ** mul - function
  ** @a: param 1
  ** @b: param 2
  **

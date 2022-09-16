@@ -1,5 +1,5 @@
 /**
- ** _isdigit - tests function that prints if integer is positive or negative
+ ** _isdigit - function
  ** @c: param 1
  **
  ** Return: 0

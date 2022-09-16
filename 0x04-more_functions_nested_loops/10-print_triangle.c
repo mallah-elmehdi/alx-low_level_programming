@@ -14,9 +14,9 @@ void print_triangle(int n)
 	j = 0;
 	while (j < n)
 	{
-        k = j + 1;
+		k = j + 1;
 		i = n - k;
-        while (k < n)
+		while (k < n)
 		{
 			putchar(' ');
 			k++;
