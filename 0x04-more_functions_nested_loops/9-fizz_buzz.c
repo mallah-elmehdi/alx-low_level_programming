@@ -1,6 +1,18 @@
 #include "main.h"
 #include <stdio.h>
 
+void print_str(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i])
+	{
+		putchar(str[i]);
+		i++;
+	}
+}
+
 /**
  ** main - func
  ** Return: 0
@@ -14,17 +26,25 @@ int main(void)
 	while (i <= 100)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
-			prinf("FizzBuzz");
+			print_str("FizzBuzz");
 		else if (i % 3 == 0)
-			prinf("Fizz");
+			print_str("Fizz");
 		else if (i % 5 == 0)
-			prinf("Buzz");
+			print_str("Buzz");
 		else
-			prinf("Buzz");
+		{
+			if (i >= 10)
+			{
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+			}
+			else
+				putchar(i + 48);
+		}
 		if (i != 100)
-			prinf("");
+			putchar(' ');
 		i++;
 	}
-	prinf("\n");
+	putchar('\n');
 	return (0);
 }
