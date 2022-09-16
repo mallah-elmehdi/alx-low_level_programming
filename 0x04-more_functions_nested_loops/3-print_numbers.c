@@ -1,7 +1,5 @@
 /**
  ** print_numbers - func
- ** @c: param 1
- **
  ** Return: 0
  **/
 
