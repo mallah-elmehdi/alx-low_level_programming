@@ -17,11 +17,11 @@ void more_numbers(void)
 		while (n <= 14)
 		{
 			if (n >= 10)
-				putchar((n / 10) + 48);
-			putchar((n % 10) + 48);
+				_putchar((n / 10) + 48);
+			_putchar((n % 10) + 48);
 			n++;
 		}
 		i++;
-		putchar('\n');
+		_putchar('\n');
 	}
 }
