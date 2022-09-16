@@ -20,17 +20,17 @@ void print_triangle(int n)
 		i = n - k;
 		while (k < n)
 		{
-			putchar(' ');
+			_putchar(' ');
 			k++;
 		}
 		while (i < n)
 		{
-			putchar('#');
+			_putchar('#');
 			i++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		j++;
 	}
 	if (n <= 0)
-		putchar('\n');
+		_putchar('\n');
 }
