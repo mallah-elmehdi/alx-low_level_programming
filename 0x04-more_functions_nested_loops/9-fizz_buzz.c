@@ -21,7 +21,7 @@ void print_str(char *str)
 
 /**
  ** main - func
- ** Return: void
+ ** Return: 0
  **/
 
 int main(void)
@@ -52,5 +52,5 @@ int main(void)
 		i++;
 	}
 	_putchar('\n');
-	retirn (0);
+	return (0);
 }
