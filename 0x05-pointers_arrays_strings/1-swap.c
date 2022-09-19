@@ -1,6 +1,6 @@
 /**
  * swap_int - check the code
- * @n: pointer
+ * @a: pointer
  * @b: pointer
  *
  * Return: void.
