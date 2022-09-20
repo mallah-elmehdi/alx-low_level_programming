@@ -9,9 +9,6 @@
 
 void print_array(int *a, int n)
 {
-	int i;
-
-	i = 0;
 	if (a)
 	{
 		while (a && n > 0)
