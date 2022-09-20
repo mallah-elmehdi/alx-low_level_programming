@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strlen - check the code
  * @s: param

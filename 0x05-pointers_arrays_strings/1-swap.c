@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * swap_int - check the code
  * @a: pointer
