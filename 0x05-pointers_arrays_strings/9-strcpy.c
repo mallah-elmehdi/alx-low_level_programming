@@ -30,9 +30,7 @@ int _strlen(char *s)
 char *_strcpy(char *dest, char *src)
 {
 	int i;
-	int o;
 
-	o = _strlen(src);
 	i = 0;
 	while (src && src[i] != '\0')
 	{
