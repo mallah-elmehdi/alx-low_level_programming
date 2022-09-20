@@ -16,6 +16,8 @@ int _strlen(char *s)
 	{
 		i++;
 	}
+	if (i % 2 && i != 0)
+		i--;
 	return (i);
 }
 
