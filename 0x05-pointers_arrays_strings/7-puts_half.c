@@ -46,6 +46,6 @@ void puts_half(char *str)
 {
 	if (str)
 	{
-		_put(str + (_strlen(str) / 2));
+		_puts(str + (_strlen(str) / 2));
 	}
 }
