@@ -16,8 +16,6 @@ int _strlen(char *s)
 	{
 		i++;
 	}
-	if (i % 2 && i != 0)
-		i++;
 	return (i);
 }
 
@@ -46,8 +44,13 @@ void _puts(char *str)
 
 void puts_half(char *str)
 {
+	int i;
+
+	i = _strlen(str);
 	if (str)
 	{
-		_puts(str + (_strlen(str) / 2));
+		if (i % 2)
+			i++;
+		_puts(str + (i / 2));
 	}
 }
