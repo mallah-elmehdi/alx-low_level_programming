@@ -9,18 +9,18 @@
 
 int _strlen(char *s)
 {
-	int i;
+    int i;
 
-	i = 0;
-	while (s && s[i])
-	{
-		i++;
-	}
-	return (i);
+    i = 0;
+    while (s && s[i])
+    {
+        i++;
+    }
+    return (i);
 }
 
 /**
- * _strcat - func
+ * _strncat - func
  * @dest: param
  * @src: param
  * @n: param
@@ -30,12 +30,12 @@ int _strlen(char *s)
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int j;
+    int i;
+    int j;
 
-	i = _strlen(dest);
-	j = 0;
-	while (src[j] && n--)
-		dest[i++] = src[j++];
-	return (dest);
+    i = _strlen(dest);
+    j = 0;
+    while (src[j] && n--)
+        dest[i++] = src[j++];
+    return (dest);
 }
