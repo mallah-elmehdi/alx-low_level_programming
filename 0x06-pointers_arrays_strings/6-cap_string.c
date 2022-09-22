@@ -23,13 +23,10 @@ int _isalpha(int c)
 
 int issep(char c)
 {
-	if (c == ',' || c == ';'
-	|| c == '.' || c == '!'
-	|| c == '?' || c == '\"'
-	|| c == '(' || c == ')'
-	|| c == '{' || c == '}'
-	|| c == ' ' || c == '\t'
-	|| c == '\n')
+	if (c == ',' || c == ';' || c == '.' ||
+	c == '!' || c == '?' || c == '\"' ||
+	c == '(' || c == ')' || c == '{' ||
+	c == '}' || c == ' ' || c == '\t' || c == '\n')
 		return (1);
 	return (0);
 }
@@ -44,23 +41,24 @@ int issep(char c)
 char *cap_string(char *str)
 {
 	int i;
+	int cap;
 
 	i = 0;
+	cap = 0;
 	while (str[i])
 	{
-		if (_isalpha(str[i]))
+		if ((i == 0 && _isalpha(str[i])) || cap)
 		{
-			if (str[i] >= 97 && str[i] <= 122)
-				str[i] -= 32;
-			i++;
-			while (str[i] && !issep(str[i]))
+			if (!issep(str[i]))
+				cap = 0;
+			if (_isalpha(str[i]))
 			{
-				if (str[i] >= 65 && str[i] <= 90)
-					str[i] += 32;
-				i++;
+				if (str[i] >= 97 && str[i] <= 122)
+					str[i] -= 32;
 			}
-			i--;
 		}
+		else if (issep(str[i]))
+			cap = 1;
 		i++;
 	}
 	return (str);
