@@ -24,10 +24,10 @@ void print_array(int *a, int n)
  */
 int main(void)
 {
-    char str[] = "ExpEct    TTe best. Prepare for tJHGDFJHDBSJFGDGFDHSGFFJBDFJJDSJFGDGFJDGSJFG KUDFJDGHJKGFDGFJGSDFKGDJKSGFJDSHGFJKDGSFJGDJSFG worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+    char str[] = "a\ta\na,a;a.a!a?a\"a(a)a{a}a";
     char *ptr;
 
     ptr = cap_string(str);
-    printf("%s", ptr);
+    printf("%s\n", str);
     return (0);
 }
