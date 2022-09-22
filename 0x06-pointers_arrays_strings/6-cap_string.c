@@ -15,6 +15,25 @@ int _isalpha(int c)
 }
 
 /**
+ ** issep - function
+ ** @c: param 1
+ **
+ ** Return: 0
+ **/
+
+int issep(char c)
+{
+	if (c == ',' || c == ';'
+	|| c == '.' || c == '!'
+	|| c == '?' || c == '\"'
+	|| c == '(' || c == ')'
+	|| c == '{' || c == '}'
+	|| c == ' ' || c == '\t')
+		return (1);
+	return (0);
+}
+
+/**
  * cap_string - func
  * @str: param
  *
@@ -39,7 +58,7 @@ char *cap_string(char *str)
 		}
 		else
 		{
-			if (str[i] == ',' || str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' || str[i] == '\"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}' || str[i] == ' ' || str[i] == '\t')
+			if (issep(str[i]))
 				cap = 1;
 		}
 		i++;
