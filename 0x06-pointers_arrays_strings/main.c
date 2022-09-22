@@ -24,10 +24,10 @@ void print_array(int *a, int n)
  */
 int main(void)
 {
-    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
-    char *p;
+    char str[] = "ExpEct    TTe best. Prepare for tJHGDFJHDBSJFGDGFDHSGFFJBDFJJDSJFGDGFJDGSJFG KUDFJDGHJKGFDGFJGSDFKGDJKSGFJDSHGFJKDGSFJGDJSFG worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+    char *ptr;
 
-    p = leet(s);
-    printf("%s", p);
+    ptr = cap_string(str);
+    printf("%s", ptr);
     return (0);
 }
