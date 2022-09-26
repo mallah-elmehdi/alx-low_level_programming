@@ -9,18 +9,19 @@
 
 void print_chessboard(char (*a)[8])
 {
-	int i;
-	int j;
+    int i;
+    int j;
 
-	i = 0;
-	while (a[i])
-	{
-		j = 0;
-		while (a[i][j])
-		{
-			write(1, &a[i][j], 1);
-			j++;
-		}
-		i++;
-	}
+    i = 0;
+    while (i < 8)
+    {
+        j = 0;
+        while (j < 8)
+        {
+            putchar(a[i][j]);
+            j++;
+        }
+        putchar('\n');
+        i++;
+    }
 }

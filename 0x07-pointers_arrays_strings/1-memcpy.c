@@ -19,7 +19,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	p0 = (unsigned char *)dest;
 	p1 = (unsigned char *)src;
 	if (p0 == p1)
-		return (p0);
+		return ((char *)p0);
 	if (p0 == NULL && p1 == NULL)
 		return (dest);
 	while (i < n)
