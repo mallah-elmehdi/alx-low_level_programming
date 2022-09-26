@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * print_chessboard - func
+ * print_diagsums - func
  * @a: param
+ * @size: param
  *
  * Return: something.
  */
