@@ -1,7 +1,5 @@
 #include "main.h"
 
-int i = 0;
-
 /**
  * _sqrt_recursion - check the code
  * @n: param
@@ -11,6 +9,8 @@ int i = 0;
 
 int _sqrt_recursion(int n)
 {
+	static int i = 0;
+
 	if (i <= n)
 	{
 		if (i * i == n)
