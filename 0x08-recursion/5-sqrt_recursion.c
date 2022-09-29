@@ -14,7 +14,7 @@ int get_sqrt(int i, int n)
 		return (i);
 	else if (i > n)
 		return (-1);
-	return get_sqrt(i + 1, n);
+	return (get_sqrt(i + 1, n));
 }
 
 /**
