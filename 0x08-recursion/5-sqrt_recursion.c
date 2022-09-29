@@ -11,12 +11,12 @@ int _sqrt_recursion(int n)
 {
 	static int i;
 
-	if (i <= n)
+	if (i > n)
+		return (-1);
+	else if (i * i != n)
 	{
-		if (i * i == n)
-			return (i);
 		i++;
 		_sqrt_recursion(n);
 	}
-	return (-1);
+	return (i);
 }
