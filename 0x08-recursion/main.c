@@ -8,9 +8,6 @@
  */
 int main(void)
 {
-    int r;
-
-    r = is_prime_number(1024);
-    printf("%d\n", r);
+    _puts_recursion("[Puts with recursion]");
     return (0);
 }
