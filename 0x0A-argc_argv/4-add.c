@@ -7,7 +7,7 @@
  * Return: something
  */
 
-int is_all_digit(char *str)
+int is_all_digit(char const *str)
 {
 	int i;
 
@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
 
 	sum = 0;
 	i = 1;
-	if (i < argc)
+	while (i < argc)
 	{
 		if (is_all_digit(argv[i]))
 			sum += atoi(argv[i]);
@@ -45,7 +45,8 @@ int main(int argc, char const *argv[])
 			printf("Error\n");
 			return (1);
 		}
+        i++;
 	}
-	printf("%ud\n", sum);
+	printf("%u\n", sum);
 	return (0);
 }
