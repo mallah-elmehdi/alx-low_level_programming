@@ -2,7 +2,7 @@
 
 /**
  * _atoi - func
- * @str: param
+ * @s: param
  *
  * Return: Always 0.
  */
