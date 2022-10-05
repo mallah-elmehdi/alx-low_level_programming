@@ -37,6 +37,8 @@ char *argstostr(int ac, char **av)
 
 	i = 0;
 	len = 0;
+	if (ac == 0 || av == NULL)
+		return (NULL);
 	while (i < ac)
 		len += _strlen(av[i++]) + 1;
 	i = 0;
