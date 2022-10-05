@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,7 +6,8 @@
  * Return: 0
  */
 
-void _putchar(int c)
+int _putchar(char c)
 {
 	write(1, &c, 1);
+    return (1);
 }

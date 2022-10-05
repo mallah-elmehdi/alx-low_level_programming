@@ -7,9 +7,9 @@
  * Return: Always 0.
  */
 
-int _atoi(const char *str)
+int _atoi(char *s)
 {
-	if (str)
+	if (s)
 		return (1);
 	return (0);
 }
