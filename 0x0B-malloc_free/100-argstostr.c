@@ -21,7 +21,7 @@ int _strlen(char *s)
 
 /**
  * argstostr - see the code
- * @sc: param
+ * @ac: param
  * @av: param
  *
  * Return: Something.
