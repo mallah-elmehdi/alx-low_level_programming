@@ -10,5 +10,12 @@
 
 int _abs(int n)
 {
-	return (-n);
+	int sign;
+
+	sign = 0;
+	if (n < 0)
+		sign = -1;
+	if (n > 0)
+		sign = 1;
+	return (n * sign);
 }
