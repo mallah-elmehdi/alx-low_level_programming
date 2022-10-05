@@ -10,16 +10,16 @@
 
 char *_strchr(char *s, char c)
 {
-	size_t i;
+	unsigned int i;
 	char *p;
 
 	i = 0;
 	p = (char *)s;
-	while (i <= (size_t)_strlen(s))
+	while (i <= (unsigned int)_strlen(s))
 	{
 		if (p[i] == (char)c)
 			return (&p[i]);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
