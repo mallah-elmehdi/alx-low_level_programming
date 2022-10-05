@@ -15,7 +15,7 @@ char *_strchr(char *s, char c)
 
 	i = 0;
 	p = (char *)s;
-	while (i <= _strlen(s))
+	while (i <= (unsigned int)_strlen(s))
 	{
 		if (p[i] == (char)c)
 			return (&p[i]);
