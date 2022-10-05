@@ -22,5 +22,6 @@ char *_strstr(char *haystack, char *needle);
 int _abs(int n);
 char *_strcpy(char *dest, char *src);
 int _atoi(const char *str);
+void _putchar(int c);
 
 #endif
