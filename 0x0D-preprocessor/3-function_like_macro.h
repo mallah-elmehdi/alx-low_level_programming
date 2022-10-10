@@ -1,6 +1,13 @@
 #ifndef _FUNCTION_LIKE_MACRO_H
 #define _FUNCTION_LIKE_MACRO_H
 
+/**
+ * _abs - check the code
+ * @n: param
+ *
+ * Return: something
+ */
+
 int _abs(int n)
 {
 	if (n < 0)
