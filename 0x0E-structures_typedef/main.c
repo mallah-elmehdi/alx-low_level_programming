@@ -10,7 +10,7 @@ int main(void)
 {
     dog_t *my_dog;
 
-    my_dog = new_dog("NULL", 3.5, "ok");
+    my_dog = new_dog("", 3.5, "");
     printf("%s/%f/%s\n", my_dog->name, my_dog->age, my_dog->owner);
 
     free(my_dog->name);

@@ -59,8 +59,6 @@ char *_strdup(char *str)
 	int i;
 
 	i = 0;
-	if (str == NULL)
-		return (NULL);
 	ret = _calloc(1, _strlen(str) + 1);
 	if (ret == NULL)
 		return (NULL);
@@ -89,8 +87,25 @@ dog_t *new_dog(char *name, float age, char *owner)
 	d = _calloc(sizeof(dog_t), 1);
 	if (d == NULL)
 		return (NULL);
-	d->name = _strdup(name);
+	if (name)
+	{
+		d->name = _strdup(name);
+		if (d->name == NULL)
+		{
+			free(d);	
+			return (NULL);
+		}
+	}
+	if (owner)
+	{
+		d->owner = _strdup(owner);
+		if (d->owner == NULL)
+		{
+			free(d->name);
+			free(d);
+			return (NULL);
+		}
+	}
 	d->age = age;
-	d->owner = _strdup(owner);
 	return (d);
 }
