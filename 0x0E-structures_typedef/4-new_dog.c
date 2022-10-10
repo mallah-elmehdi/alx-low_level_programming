@@ -61,7 +61,7 @@ char *_strdup(char *str)
 	i = 0;
 	if (str == NULL)
 		return (NULL);
-	ret = malloc(_strlen(str) + 1);
+	ret = _calloc(1, _strlen(str) + 1);
 	if (ret == NULL)
 		return (NULL);
 	while (i < _strlen(str))
@@ -87,7 +87,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *d;
 
 	d = _calloc(sizeof(dog_t), 1);
-	if (!d)
+	if (d == NULL)
 		return (NULL);
 	d->name = _strdup(name);
 	d->age = age;
