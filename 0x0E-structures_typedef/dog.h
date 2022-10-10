@@ -10,9 +10,10 @@ typedef struct dog dog;
  * @name: param
  * @age: param
  * @owner: param
- * 
+ *
  * Description: dog struct
  */
+
 struct dog
 {
 	char *name;
