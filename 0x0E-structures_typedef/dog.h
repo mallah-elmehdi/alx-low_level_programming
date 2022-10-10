@@ -13,7 +13,6 @@ typedef struct dog dog;
  * 
  * Description: dog struct
  */
-
 struct dog
 {
 	char *name;
