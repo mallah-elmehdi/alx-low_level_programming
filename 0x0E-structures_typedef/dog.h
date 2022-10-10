@@ -3,15 +3,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct dog dog;
+
 /**
- * dog - check the code
+ * struct dog - check the code
  * @name: param
  * @age: param
  * @owner: param
- *
+ * 
+ * Description: dog struct
  */
 
-typedef struct dog dog;
 struct dog
 {
 	char *name;
