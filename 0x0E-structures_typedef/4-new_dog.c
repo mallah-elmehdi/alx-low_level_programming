@@ -1,6 +1,33 @@
 #include "dog.h"
 
 /**
+ * _calloc - check the code
+ * @nmemb: param
+ * @size: param
+ *
+ * Return: somthing.
+ */
+
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	void *ret;
+	int i;
+
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	ret = malloc(nmemb * size);
+	i = 0;
+	if (ret == NULL)
+		return (NULL);
+	while ((unsigned int)i < nmemb * size)
+	{
+		((unsigned char *)ret)[i] = '\0';
+		i++;
+	}
+	return (ret);
+}
+
+/**
  * _strlen - check the code
  * @s: param
  *
@@ -57,15 +84,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
 
-	d = malloc(sizeof(dog_t));
+	d = _calloc(sizeof(dog_t), 2);
 	if (!d)
 		return (NULL);
 	d->name = _strdup(name);
-	if (d->name == NULL)
-		return (NULL);
 	d->age = age;
 	d->owner = _strdup(owner);
-	if (d->owner == NULL)
-		return (NULL);
 	return (d);
 }
