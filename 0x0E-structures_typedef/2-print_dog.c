@@ -1,7 +1,7 @@
 #include "dog.h"
 
 /**
- * init_dog - check the code
+ * print_dog - check the code
  * @d: param
  *
  * Return: somthing.
