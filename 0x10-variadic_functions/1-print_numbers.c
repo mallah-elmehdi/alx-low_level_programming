@@ -102,7 +102,8 @@ void _puts(char *str, int free_it)
 }
 
 /**
- * sum_them_all - check the code
+ * print_numbers - check the code
+ * @separator: param
  * @n: param
  *
  * Return: somthing.
