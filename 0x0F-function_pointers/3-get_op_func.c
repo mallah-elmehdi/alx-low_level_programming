@@ -3,7 +3,7 @@
 
 /**
  * get_op_func - check the code
- * @a: param
+ * @s: param
  *
  * Return: Somthin'.
  */
