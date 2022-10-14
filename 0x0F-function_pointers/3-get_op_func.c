@@ -2,9 +2,8 @@
 #include "3-calc.h"
 
 /**
- * op_add - check the code
+ * get_op_func - check the code
  * @a: param
- * @b: param
  *
  * Return: Somthin'.
  */
