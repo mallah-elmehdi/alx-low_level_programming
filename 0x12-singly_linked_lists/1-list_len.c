@@ -1,21 +1,21 @@
 #include "lists.h"
 
 /**
- * list_len - check the code
- * @h: param
+ * add_node - check the code
+ * @head: param
+ * @str: param
  *
  * Return: somthing
  */
 
-size_t list_len(const list_t *h)
+list_t *add_node(list_t **head, const char *str)
 {
-	list_t *n = (list_t *)h;
-	size_t i = 0;
+	list_t *n;
 
-	while (n)
-	{
-		n = n->next;
-		i++;
-	}
-	return (i);
+	n = malloc(sizeof(list_t));
+	if (n == NULL)
+		return (NULL);
+	n->str = str;
+	n->next = *head;
+	return (n);
 }
