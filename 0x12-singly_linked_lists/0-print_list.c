@@ -9,13 +9,13 @@
 
 size_t print_list(const list_t *h)
 {
-	list_t *node = h;
+	list_t *node = (list_t *)h;
 	size_t i = 0;
 
 	while (node)
 	{
-		node = node->next;
 		printf("[%u] %s\n", node->len, node->str ? node->str : "(nil)");
+		node = node->next;
 		i++;
 	}
 	return (i);
