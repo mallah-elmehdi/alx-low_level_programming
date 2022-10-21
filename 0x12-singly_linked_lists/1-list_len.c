@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - check the code
+ * list_len - check the code
  * @h: param
  *
  * Return: somthing
@@ -14,10 +14,6 @@ size_t list_len(const list_t *h)
 
 	while (n)
 	{
-		if (n->str)
-			printf("[%u] %s\n", n->len, n->str);
-		else
-			printf("[%u] %s\n", 0, "(nil)");
 		n = n->next;
 		i++;
 	}
