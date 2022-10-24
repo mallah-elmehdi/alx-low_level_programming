@@ -15,6 +15,20 @@ int help(char c)
 }
 
 /**
+ * s_handler - check the code
+ * @s: param
+ *
+ * Return: ...
+ */
+
+int s_handler(char *s)
+{
+	if (s == NULL)
+		return (write(1, "(null)", 6));
+	return (write(1, s, _strlen(s)));
+}
+
+/**
  * _printf - check the code
  * @format: param
  *
@@ -37,12 +51,11 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
-			if (format[i] == 's')
-			{
-				s = va_arg(ap, char *);
-				len += write(1, s, _strlen(s));
-			}
-			else if (format[i] == 'c')
+			while (format[i] && format[i] == ' ')
+				i++;
+			if (format[i] == 's' || format[i] == 'S')
+				len += s_handler(va_arg(ap, char *));
+			else if (format[i] == 'c' || format[i] == 'C')
 			{
 				c = va_arg(ap, int);
 				len += write(1, &c, 1);
@@ -55,7 +68,7 @@ int _printf(const char *format, ...)
 			else if (format[i] == '%')
 				len += write(1, "%", 1);
 			else
-				help(format[i]);
+				len += help(format[i]);
 		}
 		else
 			len += write(1, &format[i], 1);
