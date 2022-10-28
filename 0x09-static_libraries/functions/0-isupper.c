@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 
 /**
  ** _isupper - tests function that prints if integer is positive or negative
