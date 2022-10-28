@@ -1,18 +1,15 @@
-#include "main.h"
+#include <stdio.h>
+#include "3-function_like_macro.h"
+#include "3-function_like_macro.h"
+#include <stdio.h>
 
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
-
 int main(void)
 {
-	char *file = __FILE__;
-	int i = 0;
-
-	while (file[i])
-		_putchar(file[i++]);
-	_putchar('\n');
-	return (0);
+    printf("%d\n", ABS(-54) * ABS(-54));
+    return (0);
 }

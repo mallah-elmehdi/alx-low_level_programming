@@ -1,19 +1,13 @@
+#include <stdlib.h>
 #include <stdio.h>
-#include "dog.h"
+#define BUFSIZE 1020
+#define TABLESIZE BUFSIZE
+#define SUB(a, b) ((a) - (b))
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
 int main(void)
 {
-    dog_t *my_dog;
-
-    my_dog = new_dog("", 3.5, "");
-    printf("%s/%f/%s\n", my_dog->name, my_dog->age, my_dog->owner);
-
-    free(my_dog->name);
-    free(my_dog->owner);
-    return (0);
+    NULL;
+    int i = SUB(5,3);
+    printf("%s\n", __FILE__);
+    return (EXIT_SUCCESS);
 }

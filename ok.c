@@ -1,11 +1,23 @@
+#include <stdio.h>
+typedef struct list_s
+{
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
+
 int main()
 {
-	int a;
-	int b = 12;
+    struct point
+    {
+        int x;
+        int y;
+    };
+    struct point my_point = {3, 7};
+    struct point *p = &my_point;
 
-	for (a = 0; a < b; a++)
-	{
-	    printf("%d\n", a);
-	}
+    int **pp;
+    
+    
+    printf("%lu\n", sizeof(*pp));
 }
-
