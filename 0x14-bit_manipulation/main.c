@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	print_binary(ULONG_MAX);
-	printf("\n");
+	int n = get_bit(ULONG_MAX, 10);
+	printf("%d\n", n);
 	return (0);
 }
