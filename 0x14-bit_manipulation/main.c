@@ -9,16 +9,11 @@
 int main(void)
 {
     unsigned long int n;
+    int ok;
 
-    n = 1024;
-    clear_bit(&n, 10);
-    printf("%lu\n", n);
-    n = 0;
-    clear_bit(&n, 10);
-    printf("%lu\n", n);
-    n = 98;
-    clear_bit(&n, 1);
-    printf("%lu\n", n);
+    n = 2048;
+    ok = clear_bit(&n, 2000);
+    printf("%lu|%d\n", n, ok);
     return (0);
 
 }
