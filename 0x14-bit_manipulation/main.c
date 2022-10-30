@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int n = get_bit(ULONG_MAX, 10);
+	int n = get_bit(ULONG_MAX, UINT_MAX);
 	printf("%d\n", n);
 	return (0);
 }
