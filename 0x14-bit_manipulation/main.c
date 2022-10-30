@@ -12,7 +12,7 @@ int main(void)
     int ok;
 
     n = 2048;
-    ok = clear_bit(&n, 2000);
+    ok = clear_bit(&n, 20);
     printf("%lu|%d\n", n, ok);
     return (0);
 
