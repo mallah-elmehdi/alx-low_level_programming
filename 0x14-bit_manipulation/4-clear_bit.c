@@ -12,6 +12,9 @@ int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int temp = *n >> index;
 
-	*n -= (temp % 2) << index;
+	if (temp == 0)
+		*n = 0;
+	else
+		*n -= (temp % 2) << index;
 	return (1);
 }
