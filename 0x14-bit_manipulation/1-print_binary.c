@@ -14,7 +14,7 @@ int get_pow(unsigned long int n)
 
 	while (1)
 	{
-		if (n < pow * 2)
+		if (n < pow * 2 || pow > pow * 2)
 			break;
 		pow *= 2;
 		i++;
@@ -38,10 +38,10 @@ unsigned long int print_01(unsigned long int n, int i)
 		pow *= 2;
 	if (n < pow)
 	{
-		_putchar('0');
+		putchar('0');
 		return (0);
 	}
-	_putchar('1');
+	putchar('1');
 	return (pow);
 }
 
