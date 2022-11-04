@@ -1,6 +1,25 @@
 #include "main.h"
 
 /**
+ * _strlen - check the code
+ * @s: param
+ *
+ * Return: ...
+ */
+
+int _strlen(char *s)
+{
+	int i;
+
+	i = 0;
+	while (s && s[i])
+	{
+		i++;
+	}
+	return (i);
+}
+
+/**
  * append_text_to_file - check the code
  * @filename: param
  * @text_content: param
@@ -11,9 +30,6 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
-	ssize_t len;
-	ssize_t r;
-	char *buff;
 
 	if (filename == NULL)
 		return (-1);
