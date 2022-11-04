@@ -40,7 +40,7 @@ int copy(int fd_from, int fd_to)
 		else if (r == 0)
 			break;
 		buff[r] = 0;
-		if (write(fd_to, buff, _strlen(buff)) <= 0)
+		if (write(fd_to, buff, _strlen(buff)) < 0)
 			return (-1);
 	}
 	return (0);
