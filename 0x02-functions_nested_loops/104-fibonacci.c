@@ -19,7 +19,7 @@ int main(void)
 		nextTerm = t1 + t2;
 		if (i)
 			printf("%lu", nextTerm);
-		if (i != 98 && i)
+		if (i + 1 != 98 && i)
 			printf(", ");
 		i++;
 	}
