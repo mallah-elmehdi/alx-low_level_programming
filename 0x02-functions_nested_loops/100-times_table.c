@@ -3,6 +3,7 @@
 /**
  * _print - function
  * @n: int
+ * @is_first: int
  *
  * Return: void
  */
@@ -45,7 +46,7 @@ void _print(int n, int is_first)
 }
 
 /**
- * _abs - function
+ * print_times_table - function
  * @n: int
  *
  * Return: int
