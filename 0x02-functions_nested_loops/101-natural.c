@@ -29,5 +29,5 @@ int main(void)
 	while (count < 6)
 		putchar(buff[count++]);
 	putchar('\n');
-	return (1);
+	return (0);
 }
