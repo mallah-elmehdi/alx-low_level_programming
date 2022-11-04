@@ -12,14 +12,14 @@ int main(void)
 	unsigned long t1 = 0, t2 = 1;
 	unsigned long nextTerm = 0;
 
-	while (i < 98)
+	while (i < 97)
 	{
 		t1 = t2;
 		t2 = nextTerm;
 		nextTerm = t1 + t2;
 		if (i)
 			printf("%lu", nextTerm);
-		if (i + 1 != 98 && i)
+		if (i + 1 != 97 && i)
 			printf(", ");
 		i++;
 	}
