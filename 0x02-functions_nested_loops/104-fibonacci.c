@@ -12,7 +12,7 @@ int main(void)
 	unsigned long t1 = 0, t2 = 1;
 	unsigned long nextTerm = 0;
 
-	while (i <= 98)
+	while (i < 98)
 	{
 		t1 = t2;
 		t2 = nextTerm;
