@@ -9,14 +9,9 @@
 
 int _strlen(char *s)
 {
-	int i;
-
-	i = 0;
-	while (s && s[i])
-	{
-		i++;
-	}
-	return (i);
+	if (!s || !s[0])
+		return (0);
+	return (1 + _strlen(s + 1));
 }
 
 /**
