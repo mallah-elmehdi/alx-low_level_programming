@@ -19,8 +19,6 @@ int main(void)
 		nextTerm = t1 + t2;
 		if (i)
 			printf("%lu", nextTerm);
-		else
-			printf("%d", i);
 		if (i != 98)
 			printf(", ");
 		i++;
