@@ -34,8 +34,7 @@ int copy(int fd_from, int fd_to)
 
 	while (1)
 	{
-		r = read(fd_from, buff, 1024);
-		if (r < 0)
+		if ((r = read(fd_from, buff, 1024)) < 0)
 			return (-1);
 		else if (r == 0)
 			break;
