@@ -13,7 +13,7 @@ int main(void)
 	int count = 6;
 	char buff[6];
 
-	while (i < 1023)
+	while (i < 1024)
 	{
 		if (i % 3 == 0)
 			sum += i;
