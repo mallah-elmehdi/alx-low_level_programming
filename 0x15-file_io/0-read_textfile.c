@@ -54,7 +54,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			break;
 		buff[r] = 0;
 		len += r;
-		if (write(STDOUT_FILENO, buff, _strlen(buff)) < 0)
+		if (write(STDOUT_FILENO, buff, _strlen(buff)) <= 0)
 		{
 			free(buff);
 			return (0);
