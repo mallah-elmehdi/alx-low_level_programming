@@ -36,7 +36,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
-	fd = open(filename, O_RDONLY);
+	fd = open(filename, O_RDWR);
 	if (fd < 0)
 		return (0);
 	buff = malloc(letters + 1);
@@ -54,7 +54,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			break;
 		buff[r] = 0;
 		len += r;
-		if (write(STDOUT_FILENO, buff, _strlen(buff)) <= 0)
+		if (write(STDOUT_FILENO, buff, _strlen(buff)) < 0)
 		{
 			free(buff);
 			return (0);
