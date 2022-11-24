@@ -23,8 +23,10 @@ void print_error(int file_des)
  * Return: None.
  */
 
-void copy(int fp_from, int fp_to, char *buffer, char *str)
+int copy(int fp_from, int fp_to, char *buffer, const char *str)
 {
+	int wc;
+
 	while ((wc = read(fp_from, buffer, 1024)) > 0)
 	{
 		if (wc != write(fp_to, buffer, wc))
@@ -35,6 +37,7 @@ void copy(int fp_from, int fp_to, char *buffer, char *str)
 			exit(99);
 		}
 	}
+	return (wc);
 }
 /**
  * main - check the code
@@ -68,7 +71,7 @@ int main(int ac, char const *av[])
 		close(fp_from);
 		exit(99);
 	}
-	copy(fp_from, fp_to, buffer, av[2]);
+	wc = copy(fp_from, fp_to, buffer, av[2]);
 	if (wc < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
