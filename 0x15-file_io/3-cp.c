@@ -34,7 +34,8 @@ int copy(int fd_from, int fd_to)
 
 	while (1)
 	{
-		if ((r = read(fd_from, buff, 1024)) < 0)
+		r = read(fd_from, buff, 1024);
+		if (r < 0)
 			return (-1);
 		else if (r == 0)
 			break;
@@ -69,7 +70,7 @@ int main(int ac, char const *av[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
-	fd_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 664);
+	fd_to = open(av[2], O_RDWR | O_CREAT | O_TRUNC, 664);
 	if (fd_to < 0 || copy(fd_from, fd_to) < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
