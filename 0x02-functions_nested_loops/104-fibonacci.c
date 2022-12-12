@@ -18,9 +18,10 @@ int main(void)
 		t2 = nextTerm;
 		nextTerm = t1 + t2;
 		if (i)
-			printf("%lu", nextTerm);
+			printf("%lld", t1 + t2);
 		if (i + 1 != 1 && i)
 			printf(", ");
+			
 		i++;
 	}
 	printf("\n");
