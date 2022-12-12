@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * sum_dlistint - function that inserts a new node at a given position
+ * insert_dnodeint_at_index - function that inserts a
+ * new node at a given position
  * @h: dlistint_t list head
  * @idx: index
  * @n: data
