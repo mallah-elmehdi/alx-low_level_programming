@@ -42,7 +42,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	new = _calloc(sizeof(hash_table_t), 1);
 	if (new == NULL)
 		return (NULL);
-	new->array = _calloc(sizeof(hash_node_t *), size + 1);
+	new->array = _calloc(sizeof(hash_node_t *), size);
 	new->size = size;
 	if (new->array == NULL)
 	{
